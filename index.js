@@ -64,8 +64,7 @@ function createMessage(fahren, celc) {
 function rand(limit) {
 
   console.log(Math.random()*limit);
-  //return Math.round(Math.random()*limit);
-
+ 
 }
 
 // -------------------- DONT NOT CHANGE THE CODE BELOW ---------------------- //
