@@ -5,8 +5,11 @@
  * @param {string} fahren temperature in degrees F
  * @returns {number} the number of degrees C
  */
-function convertToCelsius(fahren) {}
-
+function convertToCelsius(fahren) {
+const celc = (fahren - 32) * (5/9); 
+//celsius.toFixed(2);
+return celc.toFixed(2);
+}
 /**
  * Takes both numbers (F, C) and display a message with
  * both numbers and how that temp makes you feel using
@@ -22,14 +25,48 @@ function convertToCelsius(fahren) {}
  * @param {number} fahren
  * @param {number} celc
  */
-function createMessage(fahren, celc) {}
+function createMessage(fahren, celc) {
+
+  var  message =" ";
+  const temper= celc;
+
+
+  if(temper >=45){
+
+  message= "Its Very Hot";
+    }
+    else if (temper <40 && temper >35 ){
+        message="its Warm";
+    }
+    else if(temper <=35 && temper >20){
+        message="Its Nice";
+    } 
+    else if(temper <=20){
+        message="Its Freezing";
+
+        
+    }
+   return "The temperature is"+" " + celc + ""+ "  C" +" " + message;
+}
+
+
+
+
+
+
+
 
 /**
  * Takes a number and returns a random integer from 0 to the limit
  * @param {number} limit
  * @returns {number} a number between 0 and the int passed in
  */
-function rand(limit) {}
+function rand(limit) {
+
+  console.log(Math.random()*limit);
+  //return Math.round(Math.random()*limit);
+
+}
 
 // -------------------- DONT NOT CHANGE THE CODE BELOW ---------------------- //
 
