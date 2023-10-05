@@ -52,10 +52,6 @@ function createMessage(fahren, celc) {
 
 
 
-
-
-
-
 /**
  * Takes a number and returns a random integer from 0 to the limit
  * @param {number} limit
@@ -63,7 +59,7 @@ function createMessage(fahren, celc) {
  */
 function rand(limit) {
 
-  console.log(Math.random()*limit);
+  console.log(Math.random()*limit+1);
  
 }
 
